@@ -19,9 +19,9 @@ body {
 .nav-links {
     list-style: none;
     display: flex;
-    gap: 1rem;
+     gap: 1rem; 
     margin: 0;
-    padding: 0;
+    padding-top: 2;
 }
 
 .nav-links li {
@@ -30,7 +30,7 @@ body {
 }
 
 .nav-links li a img {
-    height: 40px; /* Adjust icon size */
+    height: 100px; /* Adjust icon size */
     width: auto;
     transition: transform 0.3s, opacity 0.3s;
 }
