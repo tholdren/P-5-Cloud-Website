@@ -2,6 +2,15 @@
 body {
     margin: 0;
     font-family: Arial, sans-serif;
+    background-image: url('Assets/g-tnpVdDRA60NCUVcUVNXA.webp'); /* Replace with your image path */
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    text-align: center;
+    flex-direction: column; /* Added to arrange components in columns */
 }
 
 .navbar {
@@ -9,6 +18,7 @@ body {
     justify-content: center;
     align-items: center;
     padding: 0.5rem 1rem;
+    flex-direction: column; /* Added to arrange components in columns */
 }
 
 .logo img {
@@ -19,7 +29,7 @@ body {
 .nav-links {
     list-style: none;
     display: flex;
-     gap: 1rem; 
+    gap: 1rem; 
     margin: 0;
     padding-top: 2;
 }
@@ -74,4 +84,24 @@ body {
     .nav-links li a img {
         height: 50px; /* Adjust size for better visibility on mobile */
     }
+}
+
+.nav-links li a img {
+    height: 100px;
+    width: auto;
+    transition: transform 0.3s ease, opacity 0.3s ease;
+}
+
+.nav-links li a img:hover {
+    transform: translateY(-5px); /* Simpler hover effect */
+    opacity: 0.9;
+}
+
+.hero-image {
+    max-width: 50%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+    padding-top: 7em;
+    flex-direction: column; /* Added to arrange components in columns */
 }
