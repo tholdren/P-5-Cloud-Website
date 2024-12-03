@@ -1,4 +1,4 @@
-/* Nav Bar */
+
 body {
     margin: 0;
     font-family: Arial, sans-serif;
@@ -13,12 +13,15 @@ body {
     flex-direction: column; /* Added to arrange components in columns */
 }
 
+/* Nav Bar */
+
 .navbar {
     display: flex;
     justify-content: center;
     align-items: center;
     padding: 0.5rem 1rem;
     flex-direction: column; /* Added to arrange components in columns */
+    width: 100%;
 }
 
 .logo img {
@@ -97,6 +100,8 @@ body {
     opacity: 0.9;
 }
 
+/* Hero Image */
+
 .hero-image {
     max-width: 50%;
     height: auto;
@@ -107,6 +112,77 @@ body {
     flex-direction: column; /* Added to arrange components in columns */
 }
 
+/* Carousel */
+
+.carousel-container {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+    padding-bottom: 10em;
+  }
+  
+  .carousel {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+  }
+  
+  .carousel-item {
+    position: relative;
+    flex: 0 0 100%;
+    height: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+  }
+  
+  .carousel-image {
+    max-width: 100%;
+    height: 100%;
+    object-fit: contain;
+  }
+  
+  .info {
+    position: absolute;
+    bottom: -100px;
+    left: 0;
+    right: 0;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    border-radius: 10px;
+    transition: bottom 0.4s ease-in-out;
+  }
+  
+  .carousel-item:hover .info {
+    bottom: 10px;
+  }
+  
+  button {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: #fff;
+    border: none;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    font-size: 1.5rem;
+    cursor: pointer;
+    z-index: 10;
+  }
+  
+  button#prev {
+    left: 10px;
+  }
+  
+  button#next {
+    right: 10px;
+  }
+  
+  button:hover {
+    background-color: #ff9a9e;
+  }
+  
 /* Footer */
 .footer {
     display: flex;
@@ -116,7 +192,7 @@ body {
     background-position: center;
     padding: 20px;
     color: white;
-    background: #ee9090;
+    background: #1921657c;
     width: 100%; /* Ensure the footer spans the whole width */
     box-sizing: border-box; /* Include padding in the element's total width and height */
 }

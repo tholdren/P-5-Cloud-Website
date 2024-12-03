@@ -23,3 +23,26 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     });
 });
+
+// Carousel
+
+const carousel = document.querySelector('.carousel');
+const items = document.querySelectorAll('.carousel-item');
+const prevButton = document.getElementById('prev');
+const nextButton = document.getElementById('next');
+
+let currentIndex = 0;
+
+function updateCarousel() {
+  carousel.style.transform = `translateX(-${currentIndex * 100}%)`;
+}
+
+prevButton.addEventListener('click', () => {
+  currentIndex = (currentIndex === 0) ? items.length - 1 : currentIndex - 1;
+  updateCarousel();
+});
+
+nextButton.addEventListener('click', () => {
+  currentIndex = (currentIndex === items.length - 1) ? 0 : currentIndex + 1;
+  updateCarousel();
+});
