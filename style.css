@@ -103,5 +103,60 @@ body {
     display: block;
     margin: 0 auto;
     padding-top: 7em;
+    padding-bottom: 18em;
     flex-direction: column; /* Added to arrange components in columns */
+}
+
+/* Footer */
+.footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-size: cover;
+    background-position: center;
+    padding: 20px;
+    color: white;
+    background: #ee9090;
+    width: 100%; /* Ensure the footer spans the whole width */
+    box-sizing: border-box; /* Include padding in the element's total width and height */
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    max-width: 1200px;
+}
+
+.footer-section {
+    flex: 1;
+    padding: 20px;
+}
+
+.footer-section h2 {
+    margin-bottom: 10px;
+}
+
+.footer-section ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-section ul li {
+    margin-bottom: 5px;
+}
+
+.footer-section ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+.footer-section ul li a:hover {
+    text-decoration: underline;
+}
+
+.footer-bottom {
+    margin-top: 20px;
+    text-align: center;
+    width: 100%;
 }
