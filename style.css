@@ -111,6 +111,94 @@ body {
     padding-bottom: 18em;
     flex-direction: column; /* Added to arrange components in columns */
 }
+/* Content Button */
+/* General Styling */
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #f4f4f9;
+}
+
+.button-container {
+    position: relative;
+    width: 200px;
+    height: 100px;
+    overflow: hidden;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Image Button Styling */
+.image-button {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    cursor: pointer;
+    z-index: 2;
+}
+
+.button-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+/* Sliding Text Styling */
+.sliding-text {
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background-color: #ffffff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    flex-direction: column;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    transition: left 0.3s ease;
+}
+
+.sliding-text p {
+    margin: 0;
+    padding: 10px;
+    font-size: 16px;
+    color: #333;
+}
+
+.close-button {
+    margin-top: 10px;
+    padding: 5px 10px;
+    font-size: 14px;
+    color: white;
+    background-color: #f44336;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.close-button:hover {
+    background-color: #d32f2f;
+}
+
+/* Active State */
+.button-container.active .sliding-text {
+    left: 0;
+}
+
+.button-container.active .image-button {
+    z-index: 1;
+}
+
 
 /* Carousel */
 
