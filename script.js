@@ -46,19 +46,3 @@ nextButton.addEventListener('click', () => {
   currentIndex = (currentIndex === items.length - 1) ? 0 : currentIndex + 1;
   updateCarousel();
 });
-// JavaScript to toggle the sliding text
-document.addEventListener('DOMContentLoaded', () => {
-  const buttonContainer = document.querySelector('.button-container');
-  const imageButton = document.querySelector('.image-button');
-  const closeButton = document.querySelector('.close-button');
-
-  // Open text when image button is clicked
-  imageButton.addEventListener('click', () => {
-      buttonContainer.classList.add('active');
-  });
-
-  // Close text when close button is clicked
-  closeButton.addEventListener('click', () => {
-      buttonContainer.classList.remove('active');
-  });
-});
